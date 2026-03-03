@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="960" viewBox="0 0 720 960">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8c5bff"/>
+      <stop offset="50%" stop-color="#2cfef7"/>
+      <stop offset="100%" stop-color="#ff4fd8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.6)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="720" height="960" fill="#05010f"/>
+  <rect x="40" y="40" width="640" height="880" rx="36" fill="url(#bg)" opacity="0.2"/>
+  <rect x="80" y="120" width="560" height="640" rx="28" fill="url(#bg)"/>
+  <circle cx="360" cy="320" r="140" fill="url(#glow)"/>
+  <rect x="180" y="520" width="360" height="40" rx="20" fill="#0b071c" opacity="0.6"/>
+  <rect x="220" y="600" width="280" height="28" rx="14" fill="#0b071c" opacity="0.5"/>
+  <text x="360" y="760" font-family="'Segoe UI', sans-serif" font-size="28" fill="#f7f3ff" text-anchor="middle" letter-spacing="4">MOE CODEX</text>
+</svg>

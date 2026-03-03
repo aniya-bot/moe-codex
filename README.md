@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Moe Codex
 
-## Getting Started
+高动效梦幻霓虹风格的角色图鉴与势力档案站点，主打 Session-first 的沉浸体验。
 
-First, run the development server:
+## Features
+
+- Home / Factions / Characters / Character Detail 完整路由
+- 36+ 角色数据，覆盖御姐 / 萝莉 / 福瑞筛选
+- 36+ 本地角色立绘（`public/characters`）
+- 高动效霓虹氛围 + `prefers-reduced-motion` 降级
+- 响应式布局，适配移动端（含 430/390/375 断点与折叠筛选）
+
+## Routes
+
+- `/` Home
+- `/factions` 势力档案
+- `/characters` 角色图鉴（含标签过滤）
+- `/characters/[id]` 角色详情
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deploy (Vercel)
 
-## Learn More
+```bash
+vercel --prod
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> 首次部署请先 `vercel login`，并按提示选择项目。
