@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import RoleImage from "@/app/components/RoleImage";
 import { characters, factions, tagOptions } from "@/app/data/characters";
 
 const featuredFilters = ["全部", "御姐", "萝莉", "福瑞"];
@@ -74,7 +75,7 @@ export default function CharactersClient() {
               className="character-card"
             >
               <div className="character-thumb">
-                <img src={character.image} alt={character.name} loading="lazy" />
+                <RoleImage src={character.image} alt={character.name} />
               </div>
               <div className="character-meta">
                 <span>{faction?.name}</span>

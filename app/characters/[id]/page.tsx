@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import RoleImage from "@/app/components/RoleImage";
 import { characters, factions } from "@/app/data/characters";
 
 export const metadata = {
@@ -30,7 +31,7 @@ export default function CharacterDetailPage({
           className="portrait"
           style={{ background: character.palette }}
         >
-          <img
+          <RoleImage
             className="portrait-image"
             src={character.image}
             alt={character.name}
